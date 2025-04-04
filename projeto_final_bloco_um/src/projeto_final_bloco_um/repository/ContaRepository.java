@@ -4,10 +4,10 @@ import projeto_final_bloco_um.model.Conta;
 
 public interface ContaRepository {
 	
-	public void buscarcpf(int CPF);
-	public void login(Conta conta);
-	public void update(Conta conta);
-	public void apagarconta(int CPF);
+	public void cadastrarproduto();
+	public void listarproduto();
+	public void atualizarproduto(int produto);
+	public void excluirproduto(int produto);
 	
 	
 	public void descontar5(int dt);

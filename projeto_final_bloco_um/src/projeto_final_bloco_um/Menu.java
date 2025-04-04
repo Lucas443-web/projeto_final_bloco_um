@@ -16,6 +16,7 @@ public class Menu {
 		int op;
 		int CPF;
 		int senha;
+		int produto = 6;
 		int p = 1;
 		int descontotipo = 0;
 		String nome;
@@ -42,6 +43,7 @@ public class Menu {
 			System.out.println("            4 - Escolher outro Produto                             ");
 			System.out.println("            5 - Loja Vulpin Tetrax, onde suas compras serão ótimas!");
 			System.out.println("*******************************************************************");
+			System.out.println("Produtos: Salsicha - 1, Peru - 2, Chocolate - 3, Bolo de limão - 4 ");
 			System.out.println("Entre com a opção desejada:                                        ");
 			System.out.println("                                                                   " + Cores.RESET);
 			
@@ -79,6 +81,13 @@ public class Menu {
                     break;
 				case 2:
 					System.out.println(Cores.Bluebb+ "Iniciando a compra\n\n");
+					
+					System.out.println("Qual Produto? Só insira números ");
+					while(produto > 5) {
+						System.out.println("Insira: ");
+						produto = leia.nextInt();
+					}
+					
 					
 					if (p == 1) {
 						System.out.println("Qual desconto? (50% - 1 35% - 2) ");

@@ -7,25 +7,25 @@ import java.util.ArrayList;
 public class ContaController implements ContaRepository{
 
 	@Override
-	public void buscarcpf(int CPF) {
+	public void cadastrarproduto() {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void login(Conta conta) {
+	public void listarproduto() {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void update(Conta conta) {
+	public void atualizarproduto() {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void apagarconta(int CPF) {
+	public void excluirproduto() {
 		// TODO Auto-generated method stub
 		
 	}
@@ -35,7 +35,6 @@ public class ContaController implements ContaRepository{
 		// TODO Auto-generated method stub
 		
 	}
-
 
 	@Override
 	public void descontar35(int dt) {
@@ -74,6 +73,11 @@ public class ContaController implements ContaRepository{
 			System.out.println("A conta de CPF " + CPF + " não foi achada!");
 		}
 	}
+	
+	
+
+	
+
 	
 	
 	
